@@ -1,0 +1,1 @@
+<h2 style="text-align: center; color: red">Error Not Found 404</h2>
