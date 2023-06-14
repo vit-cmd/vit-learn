@@ -30,9 +30,15 @@
                 foreach($dataPosts as $key => $value) {
                     echo "<tr><th>$key</th>";
                     echo "<td>$value->title</td>";
-                    echo "<td>$value->description</td>";
-                    echo "<td>$value->link</td>";
-                    echo "<td><img src='$value->image' /></td>";
+                    if(!empty($value->description)) {
+                      echo "<td>$value->description</td>";
+                    }
+                    if(!empty($value->link)) {
+                      echo "<td>$value->link</td>";
+                    }
+                    if(!empty($value->image)) {
+                      echo "<td><img src='$value->image' /></td>";
+                    }
                 }
             ?>
         </tbody>

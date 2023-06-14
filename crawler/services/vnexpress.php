@@ -43,5 +43,4 @@
             }
         }
     }
-
     render("vnexpress", compact("title", 'content', 'dataPosts'));
